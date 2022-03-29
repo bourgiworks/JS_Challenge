@@ -60,5 +60,38 @@ function reversedArray(name){
       return ne;
   }
   console.log(reversedArray(["Kalisa"," Claude",45],["Mukisa","Jimy",22],["Gatete"," Eric",7]));
+/*6. Majority Element */
+
+function majority(array){
+
+    let count=0;
+    let num= [];
+    for(let k=0; k<array.length ;k++){
+    for(let x=0; x<array.length ;x++){
+    for(let i=0; i<array.length; i++){
+        if(array[x]=== array[i]){     
+            count+=1;
+            
+
+        }}
+        num.push(count);
+        count=0;
+    }
+   for(l=0;l<num.length;){
+       if(num[l]>(num.length)/2){
+           return "This has majority Element";
+       }
+       else{
+           return "No majority element";
+       }
+   }
+       
+      
+
+    }
+    
+
+}
+console.log(majority([10,17,23,10,23,10,10,10]));
 
 
